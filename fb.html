@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F0F2F5;
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            display: grid;
+            place-items: center;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0%;
+        }
+
+        .fb {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 3.2rem;
+            color: #0866FF;
+        }
+
+        .tag {
+            font-size: 28px;
+        }
+
+        .main {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .title {
+            width: 500px;
+        }
+
+        @media screen and (max-width:599px) {
+            .main {
+                height: auto;
+            }
+
+            .title {
+                width: 400px;
+                text-align: center;
+            }
+        }
+
+        .box {
+            width: fit-content;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.304);
+        }
+
+        .box * {
+            margin: 4px;
+        }
+
+        .box input {
+            padding: 16px 16px;
+            width: 330px;
+            border: 0.6px solid gray;
+            border-radius: 3px;
+        }
+
+        .loginb {
+            padding: 16.5px 16px;
+            width: 363px;
+            background-color: #1877F2;
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .cnb {
+            padding: 16.5px 16px;
+            width: fit-content;
+            background-color: #42B72A;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            margin: 20px 4px;
+        }
+        .point{
+            cursor: pointer;
+        }
+        .hl:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <span class="fb">facebook</span>
+            <p class="tag">Facebook helps you connect and share with the people in your life.
+            </p>
+        </div>
+        <div class="login box">
+            <input type="email" name="email" id="email" placeholder="Email address or phone number">
+            <input type="password" id="password" placeholder="Password">
+            <button type="button" class="loginb point"><span style="font-weight: 700;">Log in</span></button>
+            <span style="color:#1877F2;" class="hl point">Forgotten password?</span>
+            <hr style="color: gray;width: 360px;">
+            <button class="cnb point"><span style="font-weight: 700;">Create new account</span></button>
+        </div>
+    </div>
+</body>
+
+</html>
